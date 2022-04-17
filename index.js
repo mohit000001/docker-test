@@ -10,7 +10,7 @@ App.get('/test', (req, res) => {
     console.log('Test Page reuested....');
     res.send('Chaning Testing');
 })
-
-App.listen(9000, () => {
+const PORT = process.env.PORT || 3000;
+App.listen(PORT, () => {
     console.log('Server Started, Listening on PORT : ', 9000);
 })
